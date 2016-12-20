@@ -25,10 +25,9 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="10dip"
-        android:background="@mipmap/ic_launcher"
+        android:background="@drawable/chk"
         android:button="@null"
         android:focusable="false"
         android:focusableInTouchMode="false" >
     </CheckBox>
-
 </RelativeLayout>

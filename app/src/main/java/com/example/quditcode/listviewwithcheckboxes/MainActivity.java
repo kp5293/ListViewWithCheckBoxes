@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import android.app.Activity;
+
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -23,7 +24,7 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class    MainActivity extends Activity implements OnClickListener {
 
     private static final String rssFeed = "https://dl.dropbox.com/s/ubezjbp553u750k/name.xml?dl=1";
 
@@ -83,13 +84,11 @@ public class MainActivity extends Activity implements OnClickListener {
             } else {
                 setAdapterToListview();
             }
-
             super.onPostExecute(result);
         }
     }
 
     // setAdapter Here....
-
     public void setAdapterToListview() {
 
         // Sort Data Alphabatical order
@@ -128,7 +127,7 @@ public class MainActivity extends Activity implements OnClickListener {
     private void showToast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
-
+//Button clicked
     @Override
     public void onClick(View v) {
         StringBuffer sb = new StringBuffer();
@@ -141,7 +140,6 @@ public class MainActivity extends Activity implements OnClickListener {
                 sb.append(",");
             }
         }
-
         showAlertView(sb.toString().trim());
 
     }
